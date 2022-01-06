@@ -1,0 +1,44 @@
+body{
+    padding-top: 75px;
+    /* background: #dadcdd; */
+    color: darkslategray;
+}
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
+                0 4px 8px 0 rgba(0, 0, 0, .05)
+}
+
+#home-quote{
+    background: url("../img/bg-quote.jpg") center center;
+    background-size: cover;
+    color:blue
+}
+
+@media (max-width: 767px){
+    #home-quote .display-4{
+        font-size: 2.5rem;
+    }
+    body{
+        padding-top: 0;
+    }
+    .fixed-top{
+        position: relative;
+    }
+}
+.lista-plano li+li {
+    border-top: 1px solid rgba(0, 0, 0, 0.077);
+}
+
+.lista-plano li{
+    padding: 1rem;
+}
+
+
+.btn-primary{
+    background: #cfc9c9;
+    border: none;
+}
+
+.btn-outline-primary{
+    border: 1px solid rgb(39, 39, 39);   
+}

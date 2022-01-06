@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Planejados</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MODAL LOGIN -->
+      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="Modal Login Título" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Faça Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="loginSenha">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Mantenha conectado</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div id="emailHelp" class="form-text">Esqueceu sua senha? <a class="text-decoration-none" href="#">Clique aqui.</a></div>
+                  </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- FIM MODAL LOGIN -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light py-3 box-shadow">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.svg" alt="">
+                <!-- <img src="./img/caravan.svg" alt="Caravan"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a href="empresa.html" class="nav-link">Nossa Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projeto3d.html" class="nav-link">Projetos 3D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="orcamento.html" class="nav-link">Orçamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dicas.html" class="nav-link">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projetos Realizados</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cozinha.html">Cozinha</a></li>
+                            <li><a class="dropdown-item" href="dormitorio.html">Dormitório</a></li>
+                            <li><a class="dropdown-item" href="sala.html">Sala</a></li>
+                            <li><a class="dropdown-item" href="banheiro.html">Banheiro</a></li>
+                            <li><a class="dropdown-item" href="lavanderia.html">Lavanderia</a></li>
+                            <li><a class="dropdown-item" href="corporativo.html">Corporativo</a></li>  
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ms-md-2" href="cadastro.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <section class="container-fluid">
+        <div class="row bg-dark text-white">
+            <div class="col-lg-7 p-0">
+                <div id="carouselCity" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselCity" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselCity" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselCity" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselCity" data-bs-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/ambiente1.jpg" class="d-block w-100" alt="Cozinha">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">Cozinha</h3>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/ambiente2.jpg" class="d-block w-100" alt="HomeTheater">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">Home Theater</h3>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/ambiente3.jpg" class="d-block w-100" alt="Closet">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">Closet</h3>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/ambiente4.jpg" class="d-block w-100" alt="Escritório">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">Escritório</h3>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselCity" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselCity" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-5 p-4 align-self-center">
+                <h1 class="display-4 text-center">Bem vindo a Criar</h1>
+                <p class="lead text-center">Ambientes planejados e sob medida</p>
+                <form>
+                    <div class="input-group input-group-lg">
+                        <input type="email" required class="form-control" placeholder="E-mail" aria-label="digite seu email">
+                        <button class="btn btn-primary" type="button">Cadastre-se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <div class="my-5">
+                <span class="h6 d-block">TUDO DE MELHOR PARA VOCÊ</span>
+                <h2 class="display-4 text-primary">Vamos mudar a sua casa</h2>
+            </div>
+            <div class="row py-4">
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/cozinha.svg" alt="Cozinha">
+                    </div>
+                    <h3>Cozinha</h3>
+                    
+                </div>
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/cama.svg" alt="Dormitório">
+                    </div>
+                    <h3>Dormitório</h3>
+                    
+                </div>
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/sofa.svg" alt="Sala">
+                    </div>
+                    <h3>Sala</h3>
+                    
+                </div>
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/banheira.svg" alt="Banheira">
+                    </div>
+                    <h3>Banheiro</h3>
+                    
+                </div>
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/lavanderia.svg" alt="Lavanderia">
+                    </div>
+                    <h3>Lavanderia</h3>
+                    
+                </div>
+                <div class="col-xl-4 col-md-6 my-3">
+                    <div style="height: 100px;" class="d-flex justify-content-center">
+                        <img src="./img/icones/office.svg" alt="Corporativo">
+                    </div>
+                    <h3>Corporativo</h3>
+                    
+                </div>
+            </div>
+
+            <a href="planos.html" class="btn btn-primary btn-lg">Orçamento</a>
+        </div>
+    </section>
+
+    <section id="home-quote" class="p-md-5">
+        <blockquote class="blockquote text-center text-white p-md-5 p-3" >
+            <p class="display-4"><em>"Móveis de 
+                qualidade para que você tenha o máximo conforto."</em></p>
+            <figcaption class="blockquote-footer text-white"></figcaption>
+        </blockquote>
+    </section>
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">Dicas</span>
+            <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6" id="perguntasFrequentes" data-children="pergunta">
+                <div class="pergunta py-2">
+                    <a class="lead collapsed text-decoration-none" data-bs-toggle="collapse" href="#pergunta1">→ Limpeza</a>
+                    <div id="pergunta1" class="collapse.show" data-parent="#perguntasFrequentes" role="tabpanel"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </p></div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead collapsed text-decoration-none" data-bs-toggle="collapse" href="#pergunta2">→ Dobradiças</a>
+                    <div id="pergunta2" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </p></div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead collapsed text-decoration-none" data-bs-toggle="collapse" href="#pergunta3">→ Puxadores</a>
+                    <div id="pergunta3" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </p></div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead text-decoration-none" data-bs-toggle="collapse" href="#pergunta4">→ Acessórios</a>
+                    <div id="pergunta4" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </p></div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead text-decoration-none" data-bs-toggle="collapse"  href="#pergunta5">→ Cuidados</a>
+                    <div id="pergunta5" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </p></div>
+                </div>
+                <div class="dropdown-divider"></div>
+            </div>
+        </div>
+        <div class="text-center my-5">
+            <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a class="btn btn-primary btn-lg" href="contato.html">Entre em contato</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none" href="planos.html">Planos</a></li>
+                            <li><a class="text-decoration-none" href="contato.html">Contato</a></li>
+                            <li><a class="text-decoration-none" href="inscricao.html">Cadastre-se</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAL</h4>
+                        <ul class="list-unstyled text-decoration-none">
+                            <li><a class="text-decoration-none" href="local.html">Ceilândia - DF</a>
+                            </li>                            
+                        </ul>
+                </div>
+                <div class="col-md-4 col-6">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary" href="mailto:caravan@email.com">criarambientesplanejados@email.com</a> </li>
+                            <li><a class="text-decoration-none text-secondary" href="tel:+55 61 981272441">61 981272441</a></li>
+                            <li class="text-secondary">De Seg. à Sex. das 08h às 18h</li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://facebook.com" target="_blank" style="max-width: 140px;">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://instragram.com" target="_blank" style="max-width: 140px">Instragram</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://twitter.com" target="_blank" style="max-width: 140px">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">Created by <a class="text-white" href="https://">Alexandre Souza Cardoso</a> </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
